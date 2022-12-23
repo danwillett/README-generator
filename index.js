@@ -1,29 +1,35 @@
 // TODO: Include packages needed for this application
-
-const fs = require('fs') //read and write files
-const inquirer = require('inquirer') // prompts series of inputs
+const mark = require('./utils/generateMarkdown');
+const fs = require('fs'); //read and write files
+const inquirer = require('inquirer'); // prompts series of inputs
+const { markAsUntransferable } = require('worker_threads');
 
 // TODO: Create an array of questions for user input
 const questions = [
-    {
+  {
+    type: 'input',
+    message: 'Project name:',
+    name: 'title',
+  },  
+  {
         type: 'input',
         message: 'Describe why you made this project and the problem it solves',
-        name: 'Description',
+        name: 'description',
       },
       {
         type: 'input',
         message: 'What steps do you need to intall your project?',
-        name: 'Installation',
+        name: 'installation',
       },
       {
         type: 'input',
         message: 'Provide instructions and examples for use',
-        name: 'Usage',
+        name: 'usage',
       },
       {
         type: 'input',
         message: 'List any collaborators, third party assets, and/or tutorials followed',
-        name: 'Credits',
+        name: 'credits',
       },      
       {
         type: 'checkbox',
@@ -34,8 +40,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile('README.md', data, (err) =>
+function writeToFile(filename, data) {
+    fs.writeFile(filename, data, (err) =>
     err ? console.error(err) : console.log('Success!'))
 }
 
@@ -46,12 +52,14 @@ function init(questions) {
     )
     .then((answers) => {
       console.log(answers)
-        // need to generate markdown file
-        
+      // generate markdown file
+      let markdownScript = mark.generateMarkdown(answers)
+      console.log(markdownScript)
+      writeToFile("readMeTest.md", markdownScript)
         // first steps are to call license functions
         
     })
-    .then(()=>console.log('returned'))
+
 }
 
 // Function call to initialize app
