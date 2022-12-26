@@ -107,10 +107,10 @@ function generateMarkdown(data) {
   let licenseSection = renderLicenseBadge(data.license);
   console.log(licenseSection)
   
-  return `# ${data.title} \n \n
+  return `# ${data.title} \n
   
   ## Description \n 
-  ${data.description} \n \n
+  ${data.description} \n
 
   ## Table of Contents \n
   - [Installation](#installation) \n
@@ -119,17 +119,23 @@ function generateMarkdown(data) {
 - [License](#license) \n \n
 
 ## Installation \n
-${data.installation} \n \n
+${data.installation} \n
 
 ## Usage \n
-${data.usage} \n \n
+${data.usage} \n
 
-## Credits \n
-${data.credits}
 
 ## License \n
-${licenseSection} \n \n
+${licenseSection} \n
 
+## Contributing \n
+${data.contributing} \n
+
+## Tests \n
+${data.tests} \n
+
+## Questions \n
+${data.questions} \n
 `;
 }
 

@@ -25,18 +25,28 @@ const questions = [
         type: 'input',
         message: 'Provide instructions and examples for use',
         name: 'usage',
-      },
-      {
-        type: 'input',
-        message: 'List any collaborators, third party assets, and/or tutorials followed',
-        name: 'credits',
-      },      
+      },    
       {
         type: 'checkbox',
         message: 'Please choose your license (Press <space> to select, <i> to invert selection, and <return> to confirm)',
         name: 'license',
         choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause 'Simplified' License", "BSD 2-Clause 'New' or 'Revised' License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License 2.0", "GNU General Public License 2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense", "no license"]
       },
+      {
+        type: 'input',
+        message: 'List any collaborators, third party assets, and/or tutorials followed',
+        name: 'contributing',
+      },
+      {
+        type: 'input',
+        message: 'Provide instructions on how to run all necessary tests (with libraries and commands)',
+        name: 'tests',
+      },  
+      {
+        type: 'input',
+        message: 'Provide an FAQs section to help users with any troubleshooting',
+        name: 'questions',
+      }, 
 ];
 
 // TODO: Create a function to write README file
@@ -55,7 +65,7 @@ function init(questions) {
       // generate markdown file
       let markdownScript = mark.generateMarkdown(answers)
       console.log(markdownScript)
-      writeToFile("readMeTest.md", markdownScript)
+      writeToFile("README.md", markdownScript)
         // first steps are to call license functions
         
     })
