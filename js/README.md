@@ -1,55 +1,53 @@
-# Pineapple 
+# pineapple 
 
   
   ## Description 
  
-  We made this project to help people find recipes that incorporate pineabpppplele whether that be food or drink. 
+  awodin 
 
 
   ## Table of Contents 
 
+  - [License](#license)
   - [Installation](#installation) 
 
-- [Usage](#usage) 
+  - [Usage](#usage) 
 
-- [Credits](#credits) 
+  - [Credits](#credits) 
 
-- [License](#license) 
  
-
-
-## Installation 
-
-No steps are needed to install this project. Just make sure you have a working web browser with internet connection. Then navigate to this link: https//pineapple.com 
-
-
-## Usage 
-
-To use this application, first enter whether you are looking for a beverage or dish. Then select froma list of additional ingredients you may have and how much pioneapple you have. Then press the "find recipes" button and you will be provided with a list of recipies and linnks to their recipe page. 
-
+ 
 
 
 ## License 
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
- 
+    This project is covered by the MIT License: https://opensource.org/licenses/MIT
+     
 
-  https://opensource.org/licenses/MIT
-   
+
+## Installation 
+
+lkdsf 
+
+
+## Usage 
+
+alsndk 
 
 
 ## Contributing 
 
-pineapple API 
+lkasn 
 
 
 ## Tests 
 
-NA 
+dnk 
 
 
 ## Questions 
 
-NA 
+undefined
 

@@ -12,6 +12,16 @@ const questions = [
     name: 'title',
   },  
   {
+    type: 'input',
+    message: 'Github Username:',
+    name: 'username',
+  },  
+  {
+    type: 'input',
+    message: 'email:',
+    name: 'email',
+  },  
+  {
         type: 'input',
         message: 'Describe why you made this project and the problem it solves',
         name: 'description',
@@ -47,11 +57,6 @@ const questions = [
         message: 'Provide instructions on how to run all necessary tests (with libraries and commands)',
         name: 'tests',
       },  
-      {
-        type: 'input',
-        message: 'Provide an FAQs section to help users with any troubleshooting',
-        name: 'questions',
-      }, 
 ];
 
 // function writes README file with user input data
