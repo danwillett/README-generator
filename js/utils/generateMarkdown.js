@@ -1,7 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 
-
+// function renders bage and link from inquirer user input
 function renderLicenseBadge(license) {
   console.log(license[0])
   let badge;
@@ -101,7 +99,7 @@ function renderLicenseBadge(license) {
 }
 
 
-// TODO: Create a function to generate markdown for README
+// function generates markdown for README
 function generateMarkdown(data) {
   console.log("hi")
   let licenseSection = renderLicenseBadge(data.license);
@@ -139,4 +137,5 @@ ${data.questions} \n
 `;
 }
 
+// exports functions when package is installed
 module.exports = {generateMarkdown, renderLicenseBadge}

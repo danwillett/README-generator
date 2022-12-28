@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// install packages needed for application
 const mark = require('./utils/generateMarkdown');
 const fs = require('fs'); //read and write files
 const inquirer = require('inquirer'); // prompts series of inputs
 const { markAsUntransferable } = require('worker_threads');
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
   {
     type: 'input',
@@ -35,6 +35,11 @@ const questions = [
       {
         type: 'input',
         message: 'List any collaborators, third party assets, and/or tutorials followed',
+        name: 'credits',
+      },
+      {
+        type: 'input',
+        message: 'Provide any instructions for how to contribute to this project',
         name: 'contributing',
       },
       {
@@ -49,13 +54,13 @@ const questions = [
       }, 
 ];
 
-// TODO: Create a function to write README file
+// function writes README file with user input data
 function writeToFile(filename, data) {
     fs.writeFile(filename, data, (err) =>
     err ? console.error(err) : console.log('Success!'))
 }
 
-// TODO: Create a function to initialize app
+// function initializes app by prompting questions using inquirer package
 function init(questions) {
     inquirer.prompt(
         questions
