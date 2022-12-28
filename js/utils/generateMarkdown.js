@@ -120,23 +120,6 @@ This project is covered by the ${name}: ${link}`
 function generateMarkdown(data) {
   console.log("hi")
   let licenseSection = renderLicenseBadge(data.license);
-  let questionSection;
-  const githubLink = `https://api.github.com/users/${data.username}`
-  fetch(githubLink)
-    .then(function (response) {
-      return response.json()
-    })
-    .then(function (results) {
-      data.github = results.html_url
-      questionSection = `
-    ${data.username}: ${data.github} \n
-    ${data.email}
-
-    `
-    })
-    .catch(function () {
-      console.error("Unrecognized github user - Please edit Questions section of README.md with correct info.")
-    })
 
   return `# ${data.title} \n
   
@@ -166,9 +149,14 @@ ${data.contributing} \n
 ${data.tests} \n
 
 ## Questions \n
-${questionSection}
+${data.username} \n
+${data.github}
+${data.email} \n
+
+${data.questions} \n
 
 `;
+
 }
 
 // exports functions when package is installed

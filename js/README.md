@@ -1,9 +1,9 @@
-# pineapple 
+# bruce 
 
   
   ## Description 
  
-  awodin 
+  asd 
 
 
   ## Table of Contents 
@@ -21,33 +21,37 @@
 
 ## License 
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
-
-    This project is covered by the MIT License: https://opensource.org/licenses/MIT
-     
+ 
 
 
 ## Installation 
 
-lkdsf 
+m;;slmas 
 
 
 ## Usage 
 
-alsndk 
+;d 
 
 
 ## Contributing 
 
-lkasn 
+ 
 
 
 ## Tests 
 
-dnk 
+ 
 
 
 ## Questions 
 
-undefined
+danwillett 
+
+https://github.com/danwillett
+danny@gmail.com 
+
+
+ 
+
 
