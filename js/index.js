@@ -70,6 +70,7 @@ function writeToFile(filename, data) {
     err ? console.error(err) : console.log('Success!'))
 }
 
+// functions generates markdown and writes readme.md file
 function makeReadme(answers) {
   let markdownScript = mark.generateMarkdown(answers)
   console.log(markdownScript)
@@ -87,6 +88,7 @@ function init(questions) {
       console.log(answers)
       const githubLink = `https://api.github.com/users/${answers.username}`
 
+      // uses github username to pull link to profile
       fetch(githubLink)
         .then(function (response) {
           return response.json()

@@ -150,7 +150,7 @@ ${data.tests} \n
 
 ## Questions \n
 ${data.username} \n
-${data.github}
+${data.github} \n
 ${data.email} \n
 
 ${data.questions} \n

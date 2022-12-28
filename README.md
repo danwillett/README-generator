@@ -31,7 +31,7 @@ To use this application, first move into the README-generator repository on your
 You will be prompted to fill in the title of your project, description, installation, usage, license, contributors, tests, and FAQs. With the exception of the license prompt which has a checkbox format, to answer the prompts, just type in your response and press answer. For the checkbox format, use the up and down arrow keys to navigate to the different license types. When you've found your license, press the space bar to select your license, and press "enter". When you have finished generating your README, a new file called README.md will be generated in the README-Generator directory.
 
 ![screenshot of terminal prompts and example answers](/images/screenshot.png)
-video walkthrough of application: https://drive.google.com/file/d/1jRxYSqvcofJSLp2PfSs6DPaYCyPkQSKc/view
+video walkthrough of application: https://drive.google.com/file/d/1KwFwjR8IDMy53ONdoYXz7RPWKZ-MGRCy/view
 
 ## Credits
 
